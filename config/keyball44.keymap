@@ -1,9 +1,9 @@
 #define DEFAULT 0
-#define SYM     1
-#define NUM     2
-#define MOUSE   3
-#define SCROLL  4
-#define FUN     5
+#define NUM     1
+#define SYM     2
+#define FUN     3
+#define MOUSE   4
+#define SCROLL  5
 #define SNIPE   6
 
 #include <behaviors/mouse_keys.dtsi>
