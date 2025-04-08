@@ -51,36 +51,36 @@ layers:
   - '@'
   - '#'
   - $
-  - '%'
-  - ^
-  - '&'
-  - '*'
   - (
   - )
+  - '&'
+  - '*'
+  - '|'
+  - \
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:bluetooth-off$$
-  - {h: '1', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '2', s: '$$mdi:bluetooth-connect$$'}
-  - {h: '3', s: '$$mdi:bluetooth-connect$$'}
+  - {t: '`', h: '$$mdi:apple-keyboard-option$$', s: '~'}
+  - {t: '''', h: '$$mdi:apple-keyboard-control$$', s: '"'}
+  - {t: KP MINUS, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: KP PLUS, h: '$$mdi:apple-keyboard-shift$$'}
+  - '{'
+  - '}'
+  - {t: _, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: KP EQUAL, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '"', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: '~', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '-', s: _}
-  - {t: '=', s: +}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '%'
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
-  - {t: '''', s: '"'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - ^
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - _
-  - +
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - \
+  - $$mdi:apple-keyboard-caps$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
