@@ -34,8 +34,8 @@ layers:
   - N
   - {t: M, h: SCROLL}
   - {t: ',', s: <}
-  - {t: ., h: MOUSE}
-  - {t: /, h: FUN, s: '?'}
+  - .
+  - {t: /, h: MOUSE, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
@@ -170,7 +170,7 @@ layers:
   - BT CLR ALL
   - {h: '$$mdi:arrow-down-bold$$', s: '$$mdi:bluetooth-connect$$'}
   - {h: '$$mdi:arrow-up-bold$$', s: '$$mdi:bluetooth-connect$$'}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -211,11 +211,11 @@ layers:
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
   - PgDn
-  - '&msc MOVE_X(10)'
-  - '&msc MOVE_Y(10)'
-  - '&msc MOVE_Y(-10)'
-  - {t: '&msc MOVE_X(-10)', type: held}
-  - $$mdi:apple-keyboard-caps$$
+  - '&msc MOVE_X(-15)'
+  - '&msc MOVE_Y(-15)'
+  - '&msc MOVE_Y(15)'
+  - '&msc MOVE_X(15)'
+  - {t: '$$mdi:apple-keyboard-caps$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
