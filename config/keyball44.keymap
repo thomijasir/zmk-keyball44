@@ -121,10 +121,10 @@
         number_layer {
             label = "NUM";
             bindings = <
-&none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5              &kp NUMBER_6    &kp NUMBER_7                 &kp NUMBER_8              &kp NUMBER_9            &kp NUMBER_0  &none
-&none   &kp LALT      &kp LCTRL     &kp LCMD      &kp LSHFT     &kp TAB                   &kp LEFT_ARROW  &hrm_right LSHFT DOWN_ARROW  &hrm_right RCMD UP_ARROW  &hrm_right RCTRL RIGHT  &kp RALT      &none
-&none   &kp CAPS      &none         &none         &none         &none                     &none           &mkp LCLK                    &mkp RCLK                 &mkp MCLK               &kp CAPS      &none
-&trans  &trans        &kp F1        &kp F5        &kp F12                         &trans  &trans                                                                                                       &trans
+&none   &kp NUMBER_1         &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5              &kp NUMBER_6    &kp NUMBER_7                 &kp NUMBER_8              &kp NUMBER_9            &kp NUMBER_0         &none
+&none   &hrm_left LALT HOME  &kp LCTRL     &kp LCMD      &kp LSHFT     &kp TAB                   &kp LEFT_ARROW  &hrm_right LSHFT DOWN_ARROW  &hrm_right RCMD UP_ARROW  &hrm_right RCTRL RIGHT  &hrm_right RALT END  &none
+&none   &kp CAPS             &none         &none         &none         &none                     &none           &mkp LCLK                    &mkp RCLK                 &mkp MCLK               &kp CAPS             &none
+&trans  &trans               &kp F1        &kp F5        &kp F12                         &trans  &trans                                                                                                              &trans
             >;
         };
 
@@ -144,17 +144,17 @@
 &none   &kp F1  &kp F2   &kp F3   &kp F4   &none              &bt BT_SEL 0   &bt BT_SEL 1    &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &bootloader
 &none   &kp F5  &kp F6   &kp F7   &kp F8   &none              &bt BT_DISC 0  &bt BT_DISC 1   &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &sys_reset
 &none   &kp F9  &kp F10  &kp F11  &kp F12  &none              &bt BT_CLR     &bt BT_CLR_ALL  &bt BT_NXT     &bt BT_PRV     &none          &none
-&trans  &trans  &trans   &trans   &trans              &trans  &mo 3                                                                       &trans
+&trans  &trans  &trans   &trans   &trans              &trans  &mo 5                                                                       &trans
             >;
         };
 
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&none   &kp N1    &kp N2      &kp N3        &kp N4           &kp N5                      &kp N6            &kp N7            &kp N8           &kp N9           &kp N0    &none
-&none   &kp LALT  &kp LCTRL   &kp LCMD      &kp LSHFT        &kp PAGE_UP                 &kp TAB           &mkp LCLK         &mkp RCLK        &mkp MCLK        &none     &none
-&none   &kp CAPS  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp PAGE_DOWN               &msc MOVE_X(-15)  &msc MOVE_Y(-15)  &msc MOVE_Y(15)  &msc MOVE_X(15)  &kp CAPS  &none
-&trans  &trans    &trans      &trans        &trans                              &kp F11  &kp RC(UP_ARROW)                                                                &none
+&none   &kp N1               &kp N2      &kp N3        &kp N4           &kp N5                      &kp N6            &kp N7            &kp N8           &kp N9           &kp N0    &none
+&none   &hrm_left LALT HOME  &kp LCTRL   &kp LCMD      &kp LSHFT        &kp PAGE_UP                 &kp TAB           &mkp LCLK         &mkp RCLK        &mkp MCLK        &kp END   &none
+&none   &kp CAPS             &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp PAGE_DOWN               &msc MOVE_X(-15)  &msc MOVE_Y(-15)  &msc MOVE_Y(15)  &msc MOVE_X(15)  &kp CAPS  &none
+&trans  &trans               &trans      &trans        &trans                              &kp F11  &kp RC(UP_ARROW)                                                                &none
             >;
         };
 
