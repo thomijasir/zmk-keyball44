@@ -111,7 +111,7 @@
             bindings = <
 &kp ESCAPE      &kp Q             &kp W              &kp E             &kp R              &kp T                       &kp Y            &kp U               &kp I              &kp O               &kp P                 &kp BACKSPACE
 &kp CAPS        &hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LSHFT F  &kp G                       &kp H            &hrm_right RSHFT J  &hrm_right RCMD K  &hrm_right LCTRL L  &hrm_right RALT SEMI  &kp SQT
-&kp LEFT_SHIFT  &lt 3 Z           &kp X              &kp C             &kp V              &kp B                       &kp N            &lt 5 M             &kp COMMA          &lt 4 PERIOD        &lt 3 SLASH           &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &lt 3 Z           &kp X              &kp C             &kp V              &kp B                       &kp N            &lt 5 M             &kp COMMA          &kp PERIOD          &lt 4 SLASH           &kp RIGHT_SHIFT
 &kp LGUI        &kp LALT          &mt LSHFT ESCAPE   &lt 2 SPACE       &lt 4 TAB                     &mt RCTRL ENTER  &lt 1 BACKSPACE                                                                                   &kp DELETE
             >;
         };
@@ -149,10 +149,10 @@
         mouse_layer {
             label = "MOUSE";
             bindings = <
-&none   &kp N1    &kp N2      &kp N3        &kp N4           &kp N5                      &kp N6            &kp N7           &kp N8            &kp N9            &kp N0    &none
-&none   &kp LALT  &kp LCTRL   &kp LCMD      &kp LSHFT        &kp PAGE_UP                 &kp TAB           &mkp LCLK        &mkp RCLK         &mkp MCLK         &none     &none
-&none   &kp CAPS  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp PAGE_DOWN               &msc MOVE_X(10)   &msc MOVE_Y(10)  &msc MOVE_Y(-10)  &msc MOVE_X(-10)  &kp CAPS  &none
-&trans  &trans    &trans      &trans        &trans                              &kp F11  &kp RC(UP_ARROW)                                                                 &none
+&none   &kp N1    &kp N2      &kp N3        &kp N4           &kp N5                      &kp N6            &kp N7            &kp N8           &kp N9           &kp N0    &none
+&none   &kp LALT  &kp LCTRL   &kp LCMD      &kp LSHFT        &kp PAGE_UP                 &kp TAB           &mkp LCLK         &mkp RCLK        &mkp MCLK        &none     &none
+&none   &kp CAPS  &kp K_MUTE  &kp C_VOL_DN  &kp C_VOLUME_UP  &kp PAGE_DOWN               &msc MOVE_X(-15)  &msc MOVE_Y(-15)  &msc MOVE_Y(15)  &msc MOVE_X(15)  &kp CAPS  &none
+&trans  &trans    &trans      &trans        &trans                              &kp F11  &kp RC(UP_ARROW)                                                                &none
             >;
         };
 
