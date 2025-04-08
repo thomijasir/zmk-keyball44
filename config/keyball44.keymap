@@ -82,7 +82,7 @@
 &kp ESCAPE      &kp Q             &kp W              &kp E             &kp R              &kp T                 &kp Y            &kp U               &kp I              &kp O               &kp P                 &kp BACKSPACE
 &kp TAB         &hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LSHFT F  &kp G                 &kp H            &hrm_right RSHFT J  &hrm_right RCMD K  &hrm_right LCTRL L  &hrm_right RALT SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z             &kp X              &kp C             &kp V              &kp B                 &kp N            &kp M               &kp COMMA          &kp DOT             &kp SLASH             &kp RIGHT_SHIFT
-&kp LGUI        &kp LALT          &mt LSHFT ESCAPE   &lt 4 SPACE       &lt 5 TAB                     &kp ENTER  &lt 1 BACKSPACE                                                                                   &kp DELETE
+&kp LGUI        &kp LALT          &mt LSHFT ESCAPE   &lt 3 SPACE       &lt 5 TAB                     &kp ENTER  &lt 1 BACKSPACE                                                                                   &kp DELETE
             >;
         };
 
@@ -106,23 +106,23 @@
             >;
         };
 
-        function_layer {
+        mouse {
+            label = "MOUSE";
+            bindings = <
+&none   &kp N1    &kp N2     &kp N3        &kp N4           &kp N5                   &kp N6            &kp N7                &kp N8                &kp N9     &kp N0    &none
+&none   &kp LALT  &kp LCTRL  &kp LCMD      &kp LSHFT        &kp TAB                  &kp PAGE_UP       &mkp LCLK             &mkp RCLK             &mkp MCLK  &none     &none
+&none   &kp CAPS  &none      &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_MUTE               &kp PAGE_DOWN     &kp C_BRIGHTNESS_INC  &kp C_BRIGHTNESS_DEC  &none      &kp CAPS  &none
+&trans  &trans    &trans     &trans        &trans                           &kp F11  &kp RC(UP_ARROW)                                                                   &none
+            >;
+        };
+
+        function {
             label = "FUN";
             bindings = <
 &none   &kp F1  &kp F2   &kp F3   &kp F4   &none              &none  &none  &none  &none  &none  &none
 &none   &kp F5  &kp F6   &kp F7   &kp F8   &none              &none  &none  &none  &none  &none  &none
 &none   &kp F9  &kp F10  &kp F11  &kp F12  &none              &none  &none  &none  &none  &none  &none
-&trans  &trans  &trans   &trans   &trans              &trans  &mo 3                              &trans
-            >;
-        };
-
-        mouse_layer {
-            label = "MOUSE";
-            bindings = <
-&none   &kp N1          &kp N2          &kp N3        &kp N4     &kp N5              &kp N6         &kp N7     &kp N8  &kp N9     &kp N0     &none
-&none   &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &none               &kp PAGE_UP    &mkp LCLK  &none   &mkp RCLK  &mkp MCLK  &none
-&none   &none           &none           &none         &none      &none               &kp PAGE_DOWN  &none      &none   &none      &none      &none
-&trans  &trans          &trans          &trans        &trans                 &trans  &trans                                                  &none
+&trans  &trans  &trans   &trans   &trans              &trans  &mo 4                              &trans
             >;
         };
 
