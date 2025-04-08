@@ -111,7 +111,7 @@
             bindings = <
 &kp ESCAPE      &kp Q             &kp W              &kp E             &kp R              &kp T                       &kp Y            &kp U               &kp I              &kp O               &kp P                 &kp BACKSPACE
 &kp CAPS        &hrm_left LALT A  &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LSHFT F  &kp G                       &kp H            &hrm_right RSHFT J  &hrm_right RCMD K  &hrm_right LCTRL L  &hrm_right RALT SEMI  &kp SQT
-&kp LEFT_SHIFT  &lt 5 Z           &kp X              &kp C             &kp V              &kp B                       &kp N            &kp M               &kp COMMA          &kp DOT             &lt 5 SLASH           &kp RIGHT_SHIFT
+&kp LEFT_SHIFT  &lt 5 Z           &kp X              &kp C             &kp V              &kp B                       &kp N            &lt 4 M             &kp COMMA          &kp DOT             &lt 5 SLASH           &kp RIGHT_SHIFT
 &kp LGUI        &kp LALT          &mt LSHFT ESCAPE   &lt 1 SPACE       &lt 3 TAB                     &mt RCTRL ENTER  &lt 2 BACKSPACE                                                                                   &kp DELETE
             >;
         };
@@ -149,10 +149,10 @@
         scroll_layer {
             label = "SCROLL";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans              &trans  &trans                                  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans              &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans              &trans  &trans                                           &trans
             >;
         };
 
