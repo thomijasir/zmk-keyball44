@@ -206,7 +206,7 @@ layers:
   - END
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:apple-keyboard-caps$$
+  - BRI INC
   - MUTE
   - $$mdi:volume-low$$
   - $$mdi:volume-high$$
@@ -215,7 +215,7 @@ layers:
   - '&msc MOVE_Y(-15)'
   - '&msc MOVE_Y(15)'
   - '&msc MOVE_X(15)'
-  - {t: '$$mdi:apple-keyboard-caps$$', type: held}
+  - {t: '$$mdi:brightness-7$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
