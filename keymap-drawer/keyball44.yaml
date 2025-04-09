@@ -57,7 +57,7 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: HOME, h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:apple-keyboard-control$$
@@ -192,7 +192,7 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: HOME, h: '$$mdi:apple-keyboard-option$$'}
   - $$mdi:apple-keyboard-control$$
