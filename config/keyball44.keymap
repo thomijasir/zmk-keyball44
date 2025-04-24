@@ -131,7 +131,7 @@
         symbol_layer {
             label = "SYM";
             bindings = <
-&none   &kp EXCLAMATION       &kp AT_SIGN                   &kp HASH                 &kp DOLLAR               &kp LEFT_PARENTHESIS              &kp RIGHT_PARENTHESIS  &kp AMPERSAND                &kp ASTERISK              &kp PIPE                        &kp NON_US_BACKSLASH   &none
+&none   &kp EXCLAMATION       &kp AT_SIGN                   &kp HASH                 &kp DOLLAR               &kp LEFT_PARENTHESIS              &kp RIGHT_PARENTHESIS  &kp AMPERSAND                &kp ASTERISK              &kp PIPE                        &kp BACKSLASH          &none
 &none   &hrm_left LALT GRAVE  &hrm_left LCTRL SINGLE_QUOTE  &hrm_left LCMD KP_MINUS  &hrm_left LSHFT KP_PLUS  &kp LEFT_BRACE                    &kp RIGHT_BRACE        &hrm_right RSHFT UNDERSCORE  &hrm_right RCMD KP_EQUAL  &hrm_right LCTRL DOUBLE_QUOTES  &hrm_right RALT TILDE  &none
 &none   &kp CAPS              &trans                        &trans                   &kp PERCENT              &kp LEFT_BRACKET                  &kp RIGHT_BRACKET      &kp CARET                    &trans                    &trans                          &kp CAPS               &none
 &trans  &trans                &trans                        &trans                   &trans                                             &trans  &trans                                                                                                                               &trans
