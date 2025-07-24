@@ -25,7 +25,7 @@ layers:
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ;, h: '$$mdi:apple-keyboard-option$$', s: ':'}
   - {t: '''', s: '"'}
-  - $$mdi:apple-keyboard-shift$$
+  - LGUI
   - {t: Z, h: '$$mdi:apple-keyboard-control$$'}
   - X
   - C
@@ -39,12 +39,12 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - LGUI
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-esc$$', h: '$$mdi:apple-keyboard-shift$$'}
+  - $$mdi:apple-keyboard-shift$$
   - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:keyboard-tab$$', h: MOUSE}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - {t: '$$mdi:backspace$$', h: NUM}
-  - '&msc MOVE_Y(-15)'
+  - $$mdi:pan-down$$
   NUM:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '1'
@@ -328,3 +328,5 @@ combos:
   k: {t: FUN, h: toggle}
 - p: [42, 10]
   k: {t: MOUSE, h: toggle}
+- p: [42, 18]
+  k: {t: SCROLL, h: toggle}

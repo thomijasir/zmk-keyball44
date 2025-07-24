@@ -66,6 +66,9 @@
 <svg id="mdi:mouse-scroll-wheel">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-mouse-scroll-wheel" viewBox="0 0 24 24"><path d="M11 1.07C7.05 1.56 4 4.92 4 9H11V7.73C10.4 7.39 10 6.74 10 6V4C10 3.26 10.4 2.61 11 2.27V1.07M13 9V7.73C13.6 7.39 14 6.74 14 6V4C14 3.26 13.6 2.61 13 2.27V1.07C16.94 1.56 20 4.92 20 9H13M4 15C4 17.12 4.84 19.16 6.34 20.66C7.84 22.16 9.88 23 12 23C14.12 23 16.16 22.16 17.66 20.66C19.16 19.16 20 17.12 20 15V11H4V15M13 6V4C13 3.45 12.55 3 12 3C11.45 3 11 3.45 11 4V6C11 6.55 11.45 7 12 7C12.55 7 13 6.55 13 6Z" /></svg>
 </svg>
+<svg id="mdi:pan-down">
+<svg xmlns="http://www.w3.org/2000/svg" id="mdi-pan-down" viewBox="0 0 24 24"><path d="M12,10A2,2 0 0,0 10,12A2,2 0 0,0 12,14A2,2 0 0,0 14,12A2,2 0 0,0 12,10M8,17L12,21.5L16,17H8Z" /></svg>
+</svg>
 <svg id="mdi:progress-download">
 <svg xmlns="http://www.w3.org/2000/svg" id="mdi-progress-download" viewBox="0 0 24 24"><path d="M13,2.03C17.73,2.5 21.5,6.25 21.95,11C22.5,16.5 18.5,21.38 13,21.93V19.93C16.64,19.5 19.5,16.61 19.96,12.97C20.5,8.58 17.39,4.59 13,4.05V2.05L13,2.03M11,2.06V4.06C9.57,4.26 8.22,4.84 7.1,5.74L5.67,4.26C7.19,3 9.05,2.25 11,2.06M4.26,5.67L5.69,7.1C4.8,8.23 4.24,9.58 4.05,11H2.05C2.25,9.04 3,7.19 4.26,5.67M2.06,13H4.06C4.24,14.42 4.81,15.77 5.69,16.9L4.27,18.33C3.03,16.81 2.26,14.96 2.06,13M7.1,18.37C8.23,19.25 9.58,19.82 11,20V22C9.04,21.79 7.18,21 5.67,19.74L7.1,18.37M12,16.5L7.5,12H11V8H13V12H16.5L12,16.5Z" /></svg>
 </svg>
@@ -423,7 +426,7 @@ rect.held, rect.combo.held {
 <g transform="translate(28, 168)" class="key keypos-24">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-shift"/>
+<text x="0" y="-4" class="key tap">LGUI</text>
 </g>
 <g transform="translate(84, 168)" class="key keypos-25">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -500,8 +503,7 @@ rect.held, rect.combo.held {
 <g transform="translate(266, 252)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-esc"/>
-<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-8" y="9" height="15" width="15.0" class="key hold glyph mdi:apple-keyboard-shift"/>
+<use href="#mdi:apple-keyboard-shift" xlink:href="#mdi:apple-keyboard-shift" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-shift"/>
 </g>
 <g transform="translate(324, 256) rotate(10.0)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -533,9 +535,7 @@ rect.held, rect.combo.held {
 <g transform="translate(812, 224)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">
-<tspan x="0" dy="-1.2em">&amp;msc</tspan><tspan x="0" dy="1.2em">MOVE_Y</tspan><tspan x="0" dy="1.2em">(-15)</tspan>
-</text>
+<use href="#mdi:pan-down" xlink:href="#mdi:pan-down" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:pan-down"/>
 </g>
 <g class="combo combopos-0">
 <path d="M684,155 l-113,88" class="combo"/>
@@ -582,6 +582,14 @@ rect.held, rect.combo.held {
 <a href="#MOUSE">
 <text x="656" y="155" class="combo tap layer-activator">MOUSE</text>
 </a><text x="656" y="166" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-6">
+<path d="M544,180 l9,56" class="combo"/>
+<path d="M544,180 l-9,-56" class="combo"/>
+<rect rx="6" ry="6" x="530" y="167" width="28" height="26" class="combo"/>
+<a href="#SCROLL">
+<text x="544" y="180" class="combo tap layer-activator">SCROLL</text>
+</a><text x="544" y="191" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -857,6 +865,14 @@ rect.held, rect.combo.held {
 <a href="#MOUSE">
 <text x="656" y="155" class="combo tap layer-activator">MOUSE</text>
 </a><text x="656" y="166" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-6">
+<path d="M544,180 l9,56" class="combo"/>
+<path d="M544,180 l-9,-56" class="combo"/>
+<rect rx="6" ry="6" x="530" y="167" width="28" height="26" class="combo"/>
+<a href="#SCROLL">
+<text x="544" y="180" class="combo tap layer-activator">SCROLL</text>
+</a><text x="544" y="191" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1146,6 +1162,14 @@ rect.held, rect.combo.held {
 <a href="#MOUSE">
 <text x="656" y="155" class="combo tap layer-activator">MOUSE</text>
 </a><text x="656" y="166" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-6">
+<path d="M544,180 l9,56" class="combo"/>
+<path d="M544,180 l-9,-56" class="combo"/>
+<rect rx="6" ry="6" x="530" y="167" width="28" height="26" class="combo"/>
+<a href="#SCROLL">
+<text x="544" y="180" class="combo tap layer-activator">SCROLL</text>
+</a><text x="544" y="191" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -1442,6 +1466,14 @@ rect.held, rect.combo.held {
 <text x="656" y="155" class="combo tap layer-activator">MOUSE</text>
 </a><text x="656" y="166" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-6">
+<path d="M544,180 l9,56" class="combo"/>
+<path d="M544,180 l-9,-56" class="combo"/>
+<rect rx="6" ry="6" x="530" y="167" width="28" height="26" class="combo"/>
+<a href="#SCROLL">
+<text x="544" y="180" class="combo tap layer-activator">SCROLL</text>
+</a><text x="544" y="191" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1480)" class="layer-MOUSE">
@@ -1733,6 +1765,14 @@ rect.held, rect.combo.held {
 <text x="656" y="155" class="combo tap layer-activator">MOUSE</text>
 </a><text x="656" y="166" class="combo hold">toggle</text>
 </g>
+<g class="combo combopos-6">
+<path d="M544,180 l9,56" class="combo"/>
+<path d="M544,180 l-9,-56" class="combo"/>
+<rect rx="6" ry="6" x="530" y="167" width="28" height="26" class="combo"/>
+<a href="#SCROLL">
+<text x="544" y="180" class="combo tap layer-activator">SCROLL</text>
+</a><text x="544" y="191" class="combo hold">toggle</text>
+</g>
 </g>
 </g>
 <g transform="translate(40, 1850)" class="layer-SCROLL">
@@ -1999,6 +2039,14 @@ rect.held, rect.combo.held {
 <a href="#MOUSE">
 <text x="656" y="155" class="combo tap layer-activator">MOUSE</text>
 </a><text x="656" y="166" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-6">
+<path d="M544,180 l9,56" class="combo"/>
+<path d="M544,180 l-9,-56" class="combo"/>
+<rect rx="6" ry="6" x="530" y="167" width="28" height="26" class="combo"/>
+<a href="#SCROLL">
+<text x="544" y="180" class="combo tap layer-activator">SCROLL</text>
+</a><text x="544" y="191" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
@@ -2270,6 +2318,14 @@ rect.held, rect.combo.held {
 <a href="#MOUSE">
 <text x="656" y="155" class="combo tap layer-activator">MOUSE</text>
 </a><text x="656" y="166" class="combo hold">toggle</text>
+</g>
+<g class="combo combopos-6">
+<path d="M544,180 l9,56" class="combo"/>
+<path d="M544,180 l-9,-56" class="combo"/>
+<rect rx="6" ry="6" x="530" y="167" width="28" height="26" class="combo"/>
+<a href="#SCROLL">
+<text x="544" y="180" class="combo tap layer-activator">SCROLL</text>
+</a><text x="544" y="191" class="combo hold">toggle</text>
 </g>
 </g>
 </g>
