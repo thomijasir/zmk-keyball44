@@ -80,7 +80,7 @@
         compatible = "zmk,combos";
 
         screenlock_combo {
-            bindings = <&screenlock_mac_v2>;
+            bindings = <&screenlock_mac>;
             key-positions = <42 11>;
         };
 
@@ -139,27 +139,17 @@
             #binding-cells = <0>;
             bindings =
                 <&macro_press>,
-                <&kp LEFT_COMMAND &kp LEFT_SHIFT>,
+                <&kp LEFT_COMMAND>,
+                <&macro_press>,
+                <&kp LEFT_SHIFT>,
                 <&macro_tap>,
                 <&kp SPACE>,
                 <&macro_release>,
-                <&kp LEFT_COMMAND &kp LEFT_SHIFT>;
+                <&kp LEFT_COMMAND>,
+                <&macro_release>,
+                <&kp LEFT_SHIFT>;
 
             label = "SHORTCAT";
-        };
-
-        screenlock_mac_v2: screenlock_mac_v2 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LEFT_COMMAND &kp LEFT_CONTROL>,
-                <&macro_tap>,
-                <&kp Q>,
-                <&macro_release>,
-                <&kp LEFT_GUI &kp LEFT_CONTROL>;
-
-            label = "SCREENLOCK_MAC_V2";
         };
     };
 
