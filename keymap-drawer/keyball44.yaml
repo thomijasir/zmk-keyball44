@@ -317,7 +317,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [42, 11]
-  k: '&screenlock_mac_v2'
+  k: '&screenlock_mac'
 - p: [6, 42]
   k: {t: QWRT, h: toggle}
 - p: [42, 7]
