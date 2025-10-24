@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: keyball44}
 layers:
   QWRT:
-  - $$mdi:keyboard-esc$$
+  - {t: '$$mdi:keyboard-esc$$', s: '$$mdi:keyboard-tab$$'}
   - {t: Q, h: FUN}
   - W
   - E
