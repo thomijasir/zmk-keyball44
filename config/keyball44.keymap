@@ -57,7 +57,7 @@
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
-            hold-trigger-key-positions = <0 1 2 3 4 12 13 14 24 5 16 15 17 29 28 27 26 25 36 37 38 39 40>;
+            hold-trigger-key-positions = <6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 41 42 43>;
             tapping-term-ms = <180>;
             quick-tap-ms = <180>;
             flavor = "tap-preferred";
@@ -72,7 +72,17 @@
             tapping-term-ms = <180>;
             quick-tap-ms = <180>;
             flavor = "tap-preferred";
-            hold-trigger-key-positions = <6 7 8 9 18 19 33 34 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 41 42 43>;
+            hold-trigger-key-positions = <0 1 2 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38 39 40>;
+        };
+
+        esc_to_tab: esc_to_tab {
+            compatible = "zmk,behavior-mod-morph";
+            label = "ESC_TO_TAB";
+            bindings = <&kp ESCAPE>, <&kp TAB>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LGUI)>;
+            keep-mods = <(MOD_LGUI)>;
         };
     };
 
@@ -159,10 +169,10 @@
         default_layer {
             label = "QWRT";
             bindings = <
-&kp ESCAPE  &lt 3 Q            &kp W              &kp E             &kp R              &kp T                       &kp Y            &kp U               &kp I              &kp O               &lt 3 P               &kp BACKSPACE
-&kp CAPS    &hrm_left LALT A   &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LSHFT F  &kp G                       &kp H            &hrm_right RSHFT J  &hrm_right RCMD K  &hrm_right LCTRL L  &hrm_right RALT SEMI  &kp SQT
-&kp LGUI    &hrm_left LCTRL Z  &kp X              &kp C             &kp V              &kp B                       &kp N            &lt 5 M             &kp COMMA          &kp PERIOD          &lt 4 SLASH           &shortcat
-&kp LGUI    &kp LALT           &kp LSHFT          &lt 2 SPACE       &lt 4 TAB                     &mt RCTRL ENTER  &lt 1 BACKSPACE                                                                                   &msc MOVE_Y(-20)
+&esc_to_tab  &lt 3 Q            &kp W              &kp E             &kp R              &kp T                       &kp Y            &kp U               &kp I              &kp O               &lt 3 P               &kp BACKSPACE
+&kp CAPS     &hrm_left LALT A   &hrm_left LCTRL S  &hrm_left LCMD D  &hrm_left LSHFT F  &kp G                       &kp H            &hrm_right RSHFT J  &hrm_right RCMD K  &hrm_right LCTRL L  &hrm_right RALT SEMI  &kp SQT
+&kp LGUI     &hrm_left LCTRL Z  &kp X              &kp C             &kp V              &kp B                       &kp N            &lt 5 M             &kp COMMA          &kp PERIOD          &lt 4 SLASH           &shortcat
+&kp LGUI     &kp LALT           &kp LSHFT          &lt 2 SPACE       &lt 4 TAB                     &mt RCTRL ENTER  &lt 1 BACKSPACE                                                                                   &msc MOVE_Y(-20)
             >;
         };
 
