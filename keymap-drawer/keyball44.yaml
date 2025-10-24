@@ -43,7 +43,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:keyboard-tab$$', h: MOUSE}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: '$$mdi:backspace$$', h: NUM}
+  - NUM
   - '&msc MOVE_Y(-20)'
   NUM:
   - $$mdi:keyboard-esc$$
