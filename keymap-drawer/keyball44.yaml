@@ -2,7 +2,7 @@ layout: {zmk_keyboard: keyball44}
 layers:
   QWRT:
   - {t: '$$mdi:keyboard-esc$$', s: '$$mdi:keyboard-tab$$'}
-  - {t: Q, h: FUN}
+  - {t: Q, h: fun}
   - W
   - E
   - R
@@ -11,7 +11,7 @@ layers:
   - U
   - I
   - O
-  - {t: P, h: FUN}
+  - {t: P, h: fun}
   - {t: '$$mdi:backspace$$', type: backspace}
   - $$mdi:apple-keyboard-caps$$
   - {t: A, h: '$$mdi:apple-keyboard-option$$'}
@@ -36,15 +36,15 @@ layers:
   - {t: ',', s: <}
   - .
   - {t: /, h: MOUSE, s: '?'}
-  - '&shortcat'
+  - {t: '&shortcat', h: 'Ctl+$$mdi:apple-keyboard-shift$$'}
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:keyboard-space$$', h: SYM}
+  - {t: '$$mdi:keyboard-space$$', h: sym}
   - {t: '$$mdi:keyboard-tab$$', h: MOUSE}
   - {t: '$$mdi:keyboard-return$$', h: '$$mdi:apple-keyboard-control$$'}
   - NUM
-  - '&msc MOVE_Y(-20)'
+  - PgDn
   NUM:
   - $$mdi:keyboard-esc$$
   - '1'
@@ -90,7 +90,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  SYM:
+  sym:
   - $$mdi:keyboard-esc$$
   - '!'
   - '@'
@@ -102,7 +102,7 @@ layers:
   - '*'
   - '|'
   - {t: \, s: '|'}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', h: '$$mdi:apple-keyboard-option$$', s: '~'}
   - {t: '''', h: '$$mdi:apple-keyboard-control$$', s: '"'}
@@ -135,7 +135,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  FUN:
+  fun:
   - $$mdi:keyboard-esc$$
   - {type: held}
   - F1
@@ -323,9 +323,9 @@ combos:
 - p: [42, 7]
   k: {t: NUM, h: toggle}
 - p: [42, 8]
-  k: {t: SYM, h: toggle}
+  k: {t: sym, h: toggle}
 - p: [42, 9]
-  k: {t: FUN, h: toggle}
+  k: {t: fun, h: toggle}
 - p: [42, 10]
   k: {t: MOUSE, h: toggle}
 - p: [42, 18]
